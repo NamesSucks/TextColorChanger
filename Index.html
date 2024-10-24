@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="decor.css">
+</head>
+<body id="background">
+    <h1 id="text">Yes</h1>
+    <button onclick="myFunction()" onmouseover="text()" id="button" onmouseout="normal()">Red</button>
+    <script>
+    function myFunction() {
+        document.getElementById("text").style.color = "red"
+    }
+
+    function text() {
+        document.getElementById("button").style.color = "red"
+        document.getElementById("button").style.fontSize = "x-large";
+    }
+
+    function normal() {
+        document.getElementById("button").style.color = "white"
+        document.getElementById("button").style.fontSize = "medium";
+    }
+    </script>
+    <p><button onclick="myWhite()" onmouseover="idk()" id="white" onmouseout="regular()">Yellow</button></p>
+    <script>
+    function myWhite() {
+        document.getElementById("text").style.color = "yellow"
+    }
+
+    function idk() {
+        document.getElementById("white").style.color = "yellow"
+        document.getElementById("white").style.fontSize = "x-large";
+    }
+
+    function regular() {
+        document.getElementById("white").style.color = "white"
+        document.getElementById("white").style.fontSize = "medium";
+    }
+    </script>
+    <p><button onclick="myBlue()" onmouseover="blue()" id="blue" onmouseout="simple()">Blue</button></p>
+    <script>
+    function myBlue() {
+        document.getElementById("text").style.color = "blue"
+    }
+
+    function blue() {
+        document.getElementById("blue").style.color = "blue"
+        document.getElementById("blue").style.fontSize = "x-large";
+    }
+
+    function simple() {
+        document.getElementById("blue").style.color = "white"
+        document.getElementById("blue").style.fontSize = "medium";
+    }
+    </script>
+    <p><button onclick="reset()" onmouseover="white()" id="reset" onmouseout="average()">Reset</button></p> 
+    <script>
+    function reset() {
+        document.getElementById("text").style.color = "white"
+    }
+
+    function white() {
+        document.getElementById("reset").style.fontSize = "x-large";
+    }
+
+    function average() {
+        document.getElementById("reset").style.fontSize = "medium";
+    }
+    </script>
+<img src="image.jpeg" alt="horizon" id="image">
+</body>
+</html>
